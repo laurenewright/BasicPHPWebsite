@@ -1,4 +1,8 @@
-<?php include("include/header.php"); ?>
+<?php 
+$pageTitle = "Personal Media Library";
+$section = null;
+
+include("include/header.php"); ?>
 
 		<div class="section catalog random">
 
@@ -39,20 +43,6 @@
 
 	</div> <!-- end content -->
 
-	<div class="footer">
+	<?php include("include/footer.php"); ?>
 
-		<div class="wrapper">
-
-			<ul>		
-				<li><a href="http://twitter.com/treehouse">Twitter</a></li>
-				<li><a href="https://www.facebook.com/TeamTreehouse">Facebook</a></li>
-			</ul>
-
-			<p>&copy; <?php echo date("Y");?> Personal Media Library</p>
-
-		</div>
 	
-	</div>
-
-</body>
-</html>

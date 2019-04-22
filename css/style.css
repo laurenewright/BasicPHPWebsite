@@ -509,21 +509,22 @@ table {
 html {overflow-y: scroll; overflow-x: hidden;}
 body {font-family: 'Open Sans', sans-serif; background:#f0eeed; color: #676767;}
 
-.wrapper {width: 980px; margin: 0 auto;}
+/* .wrapper {width: 980px; margin: 0 auto;} */
 #content {padding: 20px 0 80px;}
 .header:after {content:"";height:0;display:block;visibility:hidden;clear:both;}
 .header {background: #ef8887; border-bottom: 3px solid #db7a78;}
-.header .branding-title {float: left; margin: 0 0 0 5px; font: 0/0 serif; text-shadow: none; color: transparent; width:225px; height:125px;background:url(../img/branding-title.png) 0 6px no-repeat;padding: 6px 0;}
-.header .branding-title a {display: block; height: 125px; width: 225px;}
-.header .nav {float: right; top: 10; right: 0; margin: 0; position: relative; left: 15px; z-index: 99999999;}
+.header .branding-title {float: left; margin: 0 0 0 150px; font: 0/0 serif; text-shadow: none; color: transparent; width:225px; height:125px;background:url(../img/branding-title.png) 0 6px no-repeat;padding: 6px 0;}
+.header .branding-title a {display: block; height: 100px; width: 225px;}
+.branding-title {padding-left: 20%;}
+.header .nav {float: right; top: 10; padding-right: 125; margin: 0; position: relative; left: 15px; z-index: 99999999;}
 .header .nav li {display: inline-block; margin: 0; list-style: none;}
 .header .nav li a {
     color: white;
     text-decoration: none;
     display: block;
     line-height: 95px;
-    padding: 10px 0 0;
-    margin: 0 0 0 50px;
+    padding: 10px 10px 0;
+    margin: 0 0 -30 -10px;
     width: 100px;
     text-align: left;
     background: url('../img/nav-sprite2.png') no-repeat 0px 105px;
@@ -533,11 +534,22 @@ body {font-family: 'Open Sans', sans-serif; background:#f0eeed; color: #676767;}
 }
 .header .nav li.on a {text-decoration:underline;}
 .header .nav li a:hover, .header .nav li a:active {opacity: 0.7;}
+.header .nav li {
+    display: inline-block;
+    padding:  0 10 0 0 ;
+}
+.header nav ul {
+    list-style: none;
+    /* margin: 0 10px;
+    padding: 0; */
+}
+
 .header .nav li.books a {background-position: 8px -5px;}
 .header .nav li.movies a {background-position: 13px -105px;}
 .header .nav li.music a {background-position: 15px -235px;}
 .header .nav li.suggest a {background-position: 35px -340px;}
-#content {min-height: 400px; background: white;}
+.header .nav li.info a {background-position: 35px -420px;}
+#content {min-height: 400px; background: rgb(243, 237, 237);}
 .section.page:after {content:"";display:block;visibility:hidden;height:0;clear:both;}
 .section.page {padding: 34px 0; background: white;}
 .section.page h1 {

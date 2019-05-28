@@ -1,10 +1,5 @@
-<?php 
-$catalog = array(
-    "Design Patterns", 
-    "Forrest Gump", 
-    "Beethoven"
-);
-
+<?php
+include("include/data.php");
 $pageTitle = "Full Catalog";
 $section = null;
 
